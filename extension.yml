@@ -1,0 +1,43 @@
+---
+Name: mysite-extension
+After:
+  - 'framework/*'
+  - 'cms/*'
+---
+Page:
+  extensions:
+    - PageHasHeroes
+ContactPage:
+  extensions:
+    - Addressable
+    - Geocodable
+    - Mappable
+Product:
+  extensions:
+    - ProductExtension
+ProductCategory:
+  extensions:
+    - ProductCategoryExtension
+  page_length: 99
+ProductAttributeType:
+  extensions:
+    - ProductAttributeTypeExtension
+ProductVariation:
+  extensions:
+    - ProductVariationExtension
+CartPage_Controller:
+  extensions:
+    - CartPage_Controller_Extension
+CheckoutPage_Controller:
+  extensions:
+    - CheckoutPage_Controller_Extension
+ShoppingCart_Controller:
+  extensions:
+    - ShoppingCartControllerExtension
+Order:
+  extensions:
+    - OrderExtension
+    - VisibilityExtension
+Form:
+  extensions:
+    - CheckoutFormExtension
